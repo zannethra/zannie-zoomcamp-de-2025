@@ -63,7 +63,7 @@ volumes:
 ```
 
 - postgres:5433
-- localhost:5432
+- localhost:5432 <--
 - db:5433
 - postgres:5432
 - db:5432
@@ -92,11 +92,11 @@ you want to use Jupyter or a python script.
 ## Question 3. Trip Segmentation Count
 
 During the period of October 1st 2019 (inclusive) and November 1st 2019 (exclusive), how many trips, **respectively**, happened:
-1. Up to 1 mile
-2. In between 1 (exclusive) and 3 miles (inclusive),
-3. In between 3 (exclusive) and 7 miles (inclusive),
-4. In between 7 (exclusive) and 10 miles (inclusive),
-5. Over 10 miles 
+1. Up to 1 mile: 104,838
+2. In between 1 (exclusive) and 3 miles (inclusive): 199,013
+3. In between 3 (exclusive) and 7 miles (inclusive): 109,645
+4. In between 7 (exclusive) and 10 miles (inclusive): 27,688
+5. Over 10 miles: 35,202
 
 Answers:
 
@@ -104,7 +104,7 @@ Answers:
 - 104,793;  198,924;  109,603;  27,678;  35,189
 - 101,056;  201,407;  110,612;  27,831;  35,281
 - 101,056;  202,661;  109,603;  27,678;  35,189
-- 104,838;  199,013;  109,645;  27,688;  35,202
+- 104,838;  199,013;  109,645;  27,688;  35,202 <--
 
 
 ## Question 4. Longest trip for each day
@@ -117,7 +117,7 @@ Tip: For every day, we only care about one single trip with the longest distance
 - 2019-10-11
 - 2019-10-24
 - 2019-10-26
-- 2019-10-31
+- 2019-10-31 <--
 
 
 ## Question 5. Three biggest pickup zones
@@ -126,8 +126,12 @@ Which were the top pickup locations with over 13,000 in
 `total_amount` (across all trips) for 2019-10-18?
 
 Consider only `lpep_pickup_datetime` when filtering by date.
+
+(East Harlem North,
+East Harlem South,
+Morningside Heights)
  
-- East Harlem North, East Harlem South, Morningside Heights
+- East Harlem North, East Harlem South, Morningside Heights <--
 - East Harlem North, Morningside Heights
 - Morningside Heights, Astoria Park, East Harlem South
 - Bedford, East Harlem North, Astoria Park
@@ -144,7 +148,7 @@ Note: it's `tip` , not `trip`
 We need the name of the zone, not the ID.
 
 - Yorkville West
-- JFK Airport
+- JFK Airport <--
 - East Harlem North
 - East Harlem South
 
